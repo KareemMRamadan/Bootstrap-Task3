@@ -9,12 +9,27 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <title>Bootstrap-Task3</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 </html>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <button
+      class="bg-body-tertiary"
+      id="theme-toggle"
+      onclick="Theme()"
+      style="border: none"
+    >
+      <a>
+        <img
+          id="img"
+          src="https://img.icons8.com/?size=100&id=45475&format=png&color=000000"
+          width="20px"
+          class="img-fluid ms-3"
+      /></a>
+    </button>
+
     <div class="container-fluid">
       <a class="navbar-brand" href="#">E Commerce</a>
       <button
@@ -53,101 +68,106 @@
     </div>
   </nav>
   <!-- grid -->
-  <div class="container text-center mt-5 pt-5">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
-            class="img-fluid"
-          />
-          <div class="card-body">
-            <h5 class="card-title">HP</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+  <button type="button" class="btn btn-primary mt-3 ms-3" onclick="appear()">
+    Show Content
+  </button>
+  <div id="content" style="display: none">
+    <div class="container text-center mt-5 pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HP</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
-            class="img-fluid"
-          />
-          <div class="card-body">
-            <h5 class="card-title">HP</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HP</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
-            class="img-fluid"
-          />
-          <div class="card-body">
-            <h5 class="card-title">HP</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HP</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
-            class="img-fluid"
-          />
-          <div class="card-body">
-            <h5 class="card-title">HP</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images-cdn.ubuy.co.id/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg"
+              class="img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HP</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- grid2 -->
-  <div class="container text-center mt-5">
-    <div class="row">
-      <div class="col">
-        <img
-          class="img-fluid"
-          src="https://e0.pxfuel.com/wallpapers/433/841/desktop-wallpaper-graphy-for-hp-laptop-windows-10-hp-pavilion.jpg"
-          class="img-fluid"
-        />
-        <div class="col mt-3">
-          <h2>HP Info</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis
-            officia voluptatum magnam similique omnis eaque quam enim quod. Cum,
-            quo expedita iusto aut delectus vel modi vitae ipsum. Corrupti
-            temporibus reiciendis fugiat, ipsa rem animi quo ullam similique
-            tempore consequuntur cupiditate suscipit nulla voluptatibus deserunt
-            nemo eaque quae sed cumque ducimus? Voluptatum quae laudantium,
-            molestiae tempora accusamus distinctio vero, asperiores consectetur
-            minima aliquam laboriosam repudiandae magnam. Laboriosam, cumque?
-            Doloribus commodi vel aperiam ea consequatur. Animi corporis dolorum
-            illo repellendus, molestias minus! Voluptatem corrupti
-            necessitatibus natus soluta ipsa optio praesentium earum, cumque
-            architecto sit perspiciatis ea suscipit, nostrum laboriosam
-            aspernatur.
-          </p>
-          <a href="#" class="btn btn-primary mb-2">Read More</a>
+    <!-- grid2 -->
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col">
+          <img
+            class="img-fluid"
+            src="https://e0.pxfuel.com/wallpapers/433/841/desktop-wallpaper-graphy-for-hp-laptop-windows-10-hp-pavilion.jpg"
+            class="img-fluid"
+          />
+          <div class="col mt-3">
+            <h2>HP Info</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis
+              officia voluptatum magnam similique omnis eaque quam enim quod.
+              Cum, quo expedita iusto aut delectus vel modi vitae ipsum.
+              Corrupti temporibus reiciendis fugiat, ipsa rem animi quo ullam
+              similique tempore consequuntur cupiditate suscipit nulla
+              voluptatibus deserunt nemo eaque quae sed cumque ducimus?
+              Voluptatum quae laudantium, molestiae tempora accusamus distinctio
+              vero, asperiores consectetur minima aliquam laboriosam repudiandae
+              magnam. Laboriosam, cumque? Doloribus commodi vel aperiam ea
+              consequatur. Animi corporis dolorum illo repellendus, molestias
+              minus! Voluptatem corrupti necessitatibus natus soluta ipsa optio
+              praesentium earum, cumque architecto sit perspiciatis ea suscipit,
+              nostrum laboriosam aspernatur.
+            </p>
+            <a href="#" class="btn btn-primary mb-2">Read More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -157,4 +177,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script src="main.js"></script>
 </body>
