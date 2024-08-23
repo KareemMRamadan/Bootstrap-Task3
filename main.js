@@ -22,10 +22,18 @@ function Theme() {
   }
   let body = document.body;
   if (body.style.backgroundColor === "black") {
-    body.style.backgroundColor = "white";
+    body.style.backgroundColor = "#92b2ce";
     body.style.color = "black";
   } else {
     body.style.backgroundColor = "black";
     body.style.color = "white";
   }
 }
+let demo1 = document.getElementById("demo1");
+
+demo1.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
